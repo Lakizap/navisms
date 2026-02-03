@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iekārtu komandas</title>
     <style>
       body {
@@ -143,7 +144,7 @@
       </div>
       <hr>
       <div>
-        <p class="command">Kopējā patērētā degviela (ne visām mašīnām ir)</p>
+        <p class="command">Kopējā patērētā degviela (ne visām tehnikām ir)</p>
         <button class="button" onclick="copyToClipboard('asd asd readio 83')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 83')">SMS</button><br><br>
       </div>
       <hr>
@@ -162,7 +163,7 @@
       <hr>
       <div>
         <p class="command">Ieslēgt ibutton uzstādījumus lai aktivizētu RFID funkciju ar buzzeri</p>
-        <button class="button" onclick="copyToClipboard('asd asd setparam 11700:1;11702:1;50390:1')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 11700:1;11702:1;50390:1')">SMS</button><br><br>
+        <button class="button" onclick="copyToClipboard('asd asd setparam 11700:1;11701:0;11702:1;50390:1')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 11700:1;11701:0;11702:1;50390:1')">SMS</button><br><br>
       </div>
       <hr>
       <div>
@@ -256,6 +257,59 @@
       </div>
       <hr>
       <h1>FMC650</h1>
+	  <h2>FMS testēšana</h2>
+      <hr>
+      <div>
+        <p class="command">Odometra pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 192')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 192')">SMS</button><br><br>
+      </div>
+      <div>
+        <p class="command">Degvielas līmenis procentos (%) pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 87')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 87')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Apgriezienu pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 88')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 88')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Kopējā patērētā degviela (ne visām tehnikām ir)</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 86')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 86')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Motorstundu pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 104')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 104')">SMS</button><br><br>
+      </div>
+      <hr>
+	  <h2>FMC650 + LVCAN testēšana</h2>
+	  <hr>
+	  <div>
+        <p class="command">Odometra pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 36')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 36')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Degvielas līmenis litros (L) pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 34')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 34')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Degvielas līmenis procentos (%) pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 37')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 37')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Apgriezienu pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 35')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 35')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Kopējā patērētā degviela (ne visām tehnikām ir)</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 33')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 33')">SMS</button><br><br>
+      </div>
+      <hr>
       <h2>TACHO</h2>
       <hr>
       <div>
