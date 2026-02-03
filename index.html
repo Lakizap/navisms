@@ -82,9 +82,28 @@
 		  <option value="+46">+46 Sweden</option>
 		  <option value="+371">+371 Latvia</option>
 		</select>
-		<input type="tel" id="num" placeholder="7191024011111">
+		<input type="tel" id="num" placeholder="7191024011111" height="78">
 		<hr>
 		<hr>
+		<hr>
+		<hr>
+		<h2>TEST SMS</h2>
+				<hr>
+		<div>
+        <p class="command">GETGPS</p>
+        <button class="button" onclick="copyToClipboard('asd asd getgps')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd getgps')">SMS</button><br><br>
+      </div>
+		<hr>
+		<div>
+        <p class="command">GETIO</p>
+        <button class="button" onclick="copyToClipboard('asd asd getio')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd getio')">SMS</button><br><br>
+      </div>
+	  		<hr>
+		<div>
+        <p class="command">TACHOCHECK</p>
+        <button class="button" onclick="copyToClipboard('asd asd tachocheck')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd tachocheck')">SMS</button><br><br>
+      </div>
+      <hr>
 		<hr>
       <h2>Aizdedzes uzstādījumi</h2>
       <div>
@@ -176,7 +195,83 @@
       </div>
       <hr>
       <br>
-      <h2>Bluetooth temperatūras pārbaude</h2>
+      <h1>FMC650</h1>
+	  <h2>FMS testēšana</h2>
+      <hr>
+      <div>
+        <p class="command">Odometra pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 192')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 192')">SMS</button><br><br>
+      </div>
+      <div>
+        <p class="command">Degvielas līmenis procentos (%) pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 87')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 87')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Apgriezienu pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 88')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 88')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Kopējā patērētā degviela (ne visām tehnikām ir)</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 86')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 86')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Motorstundu pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 104')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 104')">SMS</button><br><br>
+      </div>
+      <hr>
+	  <h2>FMC650 + LVCAN testēšana</h2>
+	  <hr>
+	  <div>
+        <p class="command">Odometra pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 36')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 36')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Degvielas līmenis litros (L) pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 34')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 34')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Degvielas līmenis procentos (%) pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 37')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 37')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Apgriezienu pārbaude</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 35')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 35')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">Kopējā patērētā degviela (ne visām tehnikām ir)</p>
+        <button class="button" onclick="copyToClipboard('asd asd readio 33')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 33')">SMS</button><br><br>
+      </div>
+      <hr>
+      <h2>TACHO</h2>
+      <hr>
+      <div>
+        <p class="command">CAN1 Bus speed (Baudrate) (250/500)</p>
+        <button class="button" onclick="copyToClipboard('asd asd setparam 205:250')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 205:250')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">CAN2 Bus speed (Baudrate) (250/500)</p>
+        <button class="button" onclick="copyToClipboard('asd asd setparam 207:250')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 207:250')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">DDD download source (taho pieslēgums) (CAN1-0 / CAN2-1)</p>
+        <button class="button" onclick="copyToClipboard('asd asd setparam 209:0')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 209:0')">SMS</button><br><br>
+      </div>
+      <hr>
+      <div>
+        <p class="command">FMS data source (FMS pieslēgums) (CAN1-0 / CAN2-1)</p>
+        <button class="button" onclick="copyToClipboard('asd asd setparam 210:0')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 210:0')">SMS</button><br><br>
+      </div>
+	  <hr>
+	  <h2>Bluetooth temperatūras pārbaude iekārtām</h2>
       <hr>
       <div>
         <p class="command">1. temp sensors</p>
@@ -253,82 +348,6 @@
         <h3>Mainīt BLE stieņa 2 MAC adresi</h3>
         <p class="command">MAC Adreses maiņa (HEX vērtības - no decimālā stieņa numura jāpārveido uz heksadecimālo un jāpievieno divas 0 priekšā - 001A4F6A2163)</p>
         <button class="button" onclick="copyToClipboard('asd asd setparam 1252:001A4F6A2163')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 1252:001A4F6A2163')">SMS</button><br><br>
-      </div>
-      <hr>
-      <h1>FMC650</h1>
-	  <h2>FMS testēšana</h2>
-      <hr>
-      <div>
-        <p class="command">Odometra pārbaude</p>
-        <button class="button" onclick="copyToClipboard('asd asd readio 192')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 192')">SMS</button><br><br>
-      </div>
-      <div>
-        <p class="command">Degvielas līmenis procentos (%) pārbaude</p>
-        <button class="button" onclick="copyToClipboard('asd asd readio 87')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 87')">SMS</button><br><br>
-      </div>
-      <hr>
-      <div>
-        <p class="command">Apgriezienu pārbaude</p>
-        <button class="button" onclick="copyToClipboard('asd asd readio 88')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 88')">SMS</button><br><br>
-      </div>
-      <hr>
-      <div>
-        <p class="command">Kopējā patērētā degviela (ne visām tehnikām ir)</p>
-        <button class="button" onclick="copyToClipboard('asd asd readio 86')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 86')">SMS</button><br><br>
-      </div>
-      <hr>
-      <div>
-        <p class="command">Motorstundu pārbaude</p>
-        <button class="button" onclick="copyToClipboard('asd asd readio 104')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 104')">SMS</button><br><br>
-      </div>
-      <hr>
-	  <h2>FMC650 + LVCAN testēšana</h2>
-	  <hr>
-	  <div>
-        <p class="command">Odometra pārbaude</p>
-        <button class="button" onclick="copyToClipboard('asd asd readio 36')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 36')">SMS</button><br><br>
-      </div>
-      <hr>
-      <div>
-        <p class="command">Degvielas līmenis litros (L) pārbaude</p>
-        <button class="button" onclick="copyToClipboard('asd asd readio 34')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 34')">SMS</button><br><br>
-      </div>
-      <hr>
-      <div>
-        <p class="command">Degvielas līmenis procentos (%) pārbaude</p>
-        <button class="button" onclick="copyToClipboard('asd asd readio 37')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 37')">SMS</button><br><br>
-      </div>
-      <hr>
-      <div>
-        <p class="command">Apgriezienu pārbaude</p>
-        <button class="button" onclick="copyToClipboard('asd asd readio 35')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 35')">SMS</button><br><br>
-      </div>
-      <hr>
-      <div>
-        <p class="command">Kopējā patērētā degviela (ne visām tehnikām ir)</p>
-        <button class="button" onclick="copyToClipboard('asd asd readio 33')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 33')">SMS</button><br><br>
-      </div>
-      <hr>
-      <h2>TACHO</h2>
-      <hr>
-      <div>
-        <p class="command">CAN1 Bus speed (Baudrate) (250/500)</p>
-        <button class="button" onclick="copyToClipboard('asd asd setparam 205:250')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 205:250')">SMS</button><br><br>
-      </div>
-      <hr>
-      <div>
-        <p class="command">CAN2 Bus speed (Baudrate) (250/500)</p>
-        <button class="button" onclick="copyToClipboard('asd asd setparam 207:250')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 207:250')">SMS</button><br><br>
-      </div>
-      <hr>
-      <div>
-        <p class="command">DDD download source (taho pieslēgums) (CAN1-0 / CAN2-1)</p>
-        <button class="button" onclick="copyToClipboard('asd asd setparam 209:0')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 209:0')">SMS</button><br><br>
-      </div>
-      <hr>
-      <div>
-        <p class="command">FMS data source (FMS pieslēgums) (CAN1-0 / CAN2-1)</p>
-        <button class="button" onclick="copyToClipboard('asd asd setparam 210:0')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 210:0')">SMS</button><br><br>
       </div>
       <hr>
       <div class="footer">Nospied uz pogas un tiks nokopēta komanda!</div>
