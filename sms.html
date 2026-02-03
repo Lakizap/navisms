@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SMS Tracker Panel</title>
+</head>
+<body>
+
+<h3>Device phone number</h3>
+
+<select id="cc">
+  <option value="+371">+371 Latvia</option>
+  <option value="+46">+46 Sweden</option>
+</select>
+
+<input type="tel" id="num" placeholder="71910240111111">
+
+<hr>
+
+<h3>Commands</h3>
+
+<button onclick="sendSMS('asd asd setparam 101:3')">Ignition voltage</button><br><br>
+<button onclick="sendSMS('asd asd getgps')">Get coords</button><br><br>
+<button onclick="sendSMS('asd asd getinfo')">Get info</button>
+
+<script>
+function sendSMS(cmd) {
+  const phone = document.getElementById("cc").value + document.getElementById("num").value;
+
+  // iOS-safe encoding (spaces become +)
+  const body = encodeURIComponent(cmd).replace(/%20/g, "+");
+
+  // iOS prefers &body=
+  const url = "sms:" + phone + "&body=" + body;
+
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>
