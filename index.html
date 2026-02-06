@@ -274,11 +274,16 @@
 				<button class="button" onclick="copyToClipboard('asd asd readio 196')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd readio 196')">SMS</button><br><br>
 			</div>
 			<hr>
-			<h2>LVCAN200 PORT1 pieslēgums</h2>
+			<h2>LVCAN200 PORT pieslēgums</h2>
 			<hr>
 			<div>
-				<p class="command">LVCAN200 PORT 1 pieslēgšana</p>
+				<p class="command">LVCAN200 COM1 PORT pieslēgšana</p>
 				<button class="button" onclick="copyToClipboard('asd asd setparam 151:48')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 151:48')">SMS</button><br><br>
+			</div>
+			<hr>
+			<div>
+				<p class="command">LVCAN200 COM2 PORT pieslēgšana</p>
+				<button class="button" onclick="copyToClipboard('asd asd setparam 173:48')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 173:48')">SMS</button><br><br>
 			</div>
 			<hr>
 			<h2>TACHOSET</h2>
@@ -366,7 +371,27 @@
 			<hr>
 			<div>
 				<p class="command">CAN2 TACHO, CAN1 AUTOCAN</p>
-				<button class="button" onclick="copyToClipboard('asd asd setparam 209:0;210:1')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 209:0;210:1')">SMS</button><br>
+				<button class="button" onclick="copyToClipboard('asd asd setparam 209:1;210:0')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 209:1;210:0')">SMS</button><br>
+			</div>
+			<hr>
+			<div>
+				<p class="command">CAN1 TACHO</p>
+				<button class="button" onclick="copyToClipboard('asd asd setparam 209:0')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 209:0')">SMS</button><br>
+			</div>
+			<hr>
+			<div>
+				<p class="command">CAN2 TACHO</p>
+				<button class="button" onclick="copyToClipboard('asd asd setparam 209:1')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 209:1')">SMS</button><br>
+			</div>
+			<hr>
+			<div>
+				<p class="command">CAN1 CAN</p>
+				<button class="button" onclick="copyToClipboard('asd asd setparam 210:0')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 210:0')">SMS</button><br>
+			</div>
+			<hr>
+			<div>
+				<p class="command">CAN2 CAN</p>
+				<button class="button" onclick="copyToClipboard('asd asd setparam 210:1')">Kopēt</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" onclick="sendSMS('asd asd setparam 210:1')">SMS</button><br>
 			</div>
 			<hr>
 			<h2>RFID uzstādījumi</h2>
